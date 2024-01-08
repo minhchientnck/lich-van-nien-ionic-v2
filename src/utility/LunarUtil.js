@@ -206,5 +206,5 @@ export function convertLunar2Solar(lunarDay, lunarMonth, lunarYear, lunarLeap, t
     }
   }
   monthStart = getNewMoonDay(k + off, timeZone);
-  return jdToDate(monthStart + lunarDay - 1);
+  return jdnToDate(monthStart + lunarDay - 1);
 }

@@ -1,8 +1,7 @@
 import { IonIcon } from "@ionic/react";
 import { add, remove } from 'ionicons/icons';
 import { useEffect, useState } from "react";
-import CalendarUtil from "../utility/CalendarUtil";
-
+import NumberFormat from "../utility/NumberFormat";
 
 interface Props {
   value: number,
@@ -62,7 +61,7 @@ const QuatityInput: React.FC<Props> = ({
     <input
       type="number"
       className="h-6 w-10 rounded-md border-2 text-center border-[#c1c1c1] [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-      value={CalendarUtil.formatNumber2Digits(valueState)}
+      value={NumberFormat.formatNumber2Digits(valueState)}
       onChange={change}
       min={min}
       max={max}

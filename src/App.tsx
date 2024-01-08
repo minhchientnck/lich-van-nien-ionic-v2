@@ -32,9 +32,8 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import MainView from './pages/MainView';
 
-setupIonicReact();
 
-const Tabs = () => <div>sssss</div>;
+setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
